@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ImageStack LogIn</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+  
+</head>
+<body>
+  <div class="cont">
+    <div class="form sign-in">
+      <h2>Sign In To ImageStack</h2>
+      <label>
+        <span>Email Address</span>
+        <input type="email" name="email" id="email">
+      </label>
+      <label>
+        <span>Password</span>
+        <input type="password" name="password" id="password">
+      </label>
+      <button onclick="signin()" class="submit" type="button" id="signin">Sign In</button>
+      <p class="forgot-pass">Forgot Password ?</p>
+
+      <div class="social-media">
+        <ul>
+          <li><img src="images/facebook.png"><a href="https://www.facebook.com/"></a></li>
+          <li><img src="images/twitter.png"></li>
+          <li><img src="images/instagram.png"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sub-cont">
+      <div class="img">
+        <div class="img-text m-up">
+          <h2>New here?</h2>
+          <p>Sign up and discover new High quality Images!</p>
+        </div>
+        <div class="img-text m-in">
+          <h2>One of us?</h2>
+          <p>If you already has an account, just sign in. We've missed you!</p>
+        </div>
+        <div class="img-btn">
+          <span class="m-up">Sign Up</span>
+          <span class="m-in">Sign In</span>
+        </div>
+      </div>
+      <div class="form sign-up">
+        <h2>Sign Up</h2>
+        <label>
+          <span>Name</span>
+          <input type="text" id="name">
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" id="email1">
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" id="password1">
+        </label>
+        <label>
+          <span>Confirm Password</span>
+          <input type="password" id="password">
+        </label>
+        <button onclick="signup()" type="button" class="submit" id="signup">Sign Up Now</button>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="form.js"></script>
+</body>
+</html>
